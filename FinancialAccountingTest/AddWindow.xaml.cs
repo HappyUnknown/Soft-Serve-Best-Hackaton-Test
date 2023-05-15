@@ -23,10 +23,12 @@ namespace FinancialAccountingTest
         public AddWindow()
         {
             InitializeComponent();
-            tbId.Text = GetLastID().ToString();
-            tbDate.Text = DateTime.Now.ToString();
+            lblId.Content = GetLastID().ToString();
+            dpDate.Text = DateTime.Now.ToString();
+            cmbType.ItemsSource = Enum.GetValues(typeof(FLType));
+            cmbType.SelectedIndex = 0;
         }
-        int GetLastID() 
+        int GetLastID()
         {
             var finLogs = db.FinancialLogs.ToList();
             int nextId = 1;
@@ -37,18 +39,31 @@ namespace FinancialAccountingTest
         private void btnAddLog_Click(object sender, RoutedEventArgs e)
         {
             FLType type = FLType.Credit;
-            try 
+            try
             {
-                type = (FLType)int.Parse(tbType.Text); 
-            } 
-            catch { MessageBox.Show("Enum parser broken"); }
-            var log = new FinancialLog() { Id = int.Parse(tbId.Text), Date = DateTime.Now, Description = tbDescription.Text, LogType = type, Value = double.Parse( tbValue.Text) };
-            db.FinancialLogs.Add(log);
-            db.SaveChanges();
+                type = (FLType)(cmbType.SelectedIndex + 1);
+            }
+            catch (Exception ex) { MessageBox.Show($"Enum parser broken: {ex.Message}"); }
 
-            AdminWindow window = new AdminWindow();
-            Close();
-            window.ShowDialog();
+            double costValue;
+            if (double.TryParse(tbValue.Text, out costValue))
+            {
+                if (tbDescription.Text.Trim(' ').Length == 0)
+                    if (MessageBox.Show("You may need some caption for your accounting. Negotiate?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+                        return;
+             
+                var log = new FinancialLog() { Id = int.Parse(lblId.Content.ToString()), Date = DateTime.Now, Description = tbDescription.Text, LogType = type, Value = costValue };
+                db.FinancialLogs.Add(log);
+                db.SaveChanges();
+
+                AdminWindow window = new AdminWindow();
+                Close();
+                window.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("It does not seem you are intending to add non-numeric prive log.");
+            }
         }
     }
 }

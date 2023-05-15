@@ -13,14 +13,32 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <DataGrid Name="dgLogs" Grid.Row="0"/>
-        <Button Grid.Column="0" Grid.Row="1" Content="Report" Name="btnGetReport" Click="btnGetReport_Click"/>
+        <Button Grid.Column="0" Grid.Row="1" Name="btnGetReport" Click="btnGetReport_Click">
+            <Viewbox>
+                <Label Content="Report"/>
+            </Viewbox>
+        </Button>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="Add" Name="btnOpenAdd" Click="btnOpenAdd_Click" />
-            <Button Grid.Column="1" Content="Remove" Name="btnRemove" Click="btnRemove_Click"/>
+            <Button Grid.Column="0" Name="btnOpenAdd" Click="btnOpenAdd_Click" >
+                <Viewbox>
+                    <Label Content="Add"/>
+                </Viewbox>
+            </Button>
+            <Button Grid.Column="1" Name="btnEdit" Click="btnEdit_Click">
+                <Viewbox>
+                    <Label Content="Edit"/>
+                </Viewbox>
+            </Button>
+            <Button Grid.Column="2" Name="btnRemove" Click="btnRemove_Click">
+                <Viewbox>
+                    <Label Content="Remove"/>
+                </Viewbox>
+            </Button>
         </Grid>
     </Grid>
 </Window>

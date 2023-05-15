@@ -59,5 +59,10 @@ namespace FinancialAccountingTest
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
