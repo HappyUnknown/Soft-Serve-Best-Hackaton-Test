@@ -22,12 +22,42 @@ namespace FinancialAccountingTest
         public AdminWindow()
         {
             InitializeComponent();
-            List<FinancialLog> logs = new List<FinancialLog>() {
-                new FinancialLog() { Id = 1, Date = DateTime.Now, Description = "Sample Text", LogType = FLType.Income, Value = 123 },
-                new FinancialLog() { Id = 1, Date = DateTime.Now, Description = "Sample Text", LogType = FLType.Income, Value = 123 },
-                new FinancialLog() { Id = 1, Date = DateTime.Now, Description = "Sample Text", LogType = FLType.Income, Value = 123 }
-            };
-            dgLogs.ItemsSource = logs;
+            try
+            {
+                var db = new FinancialLogContext();
+                dgLogs.ItemsSource = db.FinancialLogs.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void btnOpenAdd_Click(object sender, RoutedEventArgs e)
+        {
+            AddWindow addWindow = new AddWindow();
+            Close();
+            addWindow.ShowDialog();
+        }
+
+        private void btnGetReport_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRemove_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var db = new FinancialLogContext();
+                db.FinancialLogs.ToList().RemoveAt(dgLogs.Items.IndexOf(dgLogs.SelectedItem));
+                dgLogs.ItemsSource = db.FinancialLogs.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

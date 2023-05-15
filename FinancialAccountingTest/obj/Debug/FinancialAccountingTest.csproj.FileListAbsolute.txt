@@ -17,3 +17,10 @@ C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\D
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.CoreCompileInputs.cache
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.exe
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.pdb
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\EntityFramework.dll
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\EntityFramework.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.CopyComplete
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AddWindow.g.cs
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AddWindow.baml

@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="AdminWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="dgLogs"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="dgLogs" Grid.Row="0"/>
+        <Button Grid.Column="0" Grid.Row="1" Content="Report" Name="btnGetReport" Click="btnGetReport_Click"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Add" Name="btnOpenAdd" Click="btnOpenAdd_Click" />
+            <Button Grid.Column="1" Content="Remove" Name="btnRemove" Click="btnRemove_Click"/>
+        </Grid>
     </Grid>
 </Window>
