@@ -58,7 +58,7 @@ namespace FinancialAccountingTest
                 var months = new List<MonthTuple>();
                 for (int i = 0; i < log.Count; i++)
                 {
-                    string title = $"Month {log[i].Date.Month}, {log[i].Date.Year}";
+                    string title = $"{(Months)log[i].Date.Month}, {log[i].Date.Year}";
                     int tindex = TitleIndex(title, ref months);
                     if (tindex == -1)
                     {
@@ -112,6 +112,10 @@ namespace FinancialAccountingTest
                 dgLogs.ItemsSource = db.FinancialLogs.ToList();
                 //MessageBox.Show($"Success removing");
             }
+            catch(NullReferenceException) 
+            {
+                MessageBox.Show("You cannot remove an element ommiting its selection.");
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -127,9 +131,13 @@ namespace FinancialAccountingTest
                 Close();
                 editWindow.ShowDialog();
             }
+            catch (IndexOutOfRangeException)
+            {
+                MessageBox.Show("You cannot edit an element ommiting its selection.");
+            }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error on index: {dgLogs.SelectedIndex} => {ex.Message}");
+                MessageBox.Show($"You cannot edit an element ommiting its selection. {ex.Message}");
             }
         }
     }

@@ -41,7 +41,8 @@ namespace FinancialAccountingTest
                 List<string> labels = new List<string>();
                 for (int i = 0; i < months.Count; i++)
                     labels.Add(months[i].Name);
-                pltReport.Plot.AddBar(values.ToArray(), positions.ToArray());
+                var bar = pltReport.Plot.AddBar(values.ToArray(), positions.ToArray());
+                bar.ShowValuesAboveBars = true;
                 pltReport.Plot.XTicks(positions.ToArray(), labels.ToArray());
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }

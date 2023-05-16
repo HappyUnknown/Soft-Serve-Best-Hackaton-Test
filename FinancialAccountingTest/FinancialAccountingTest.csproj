@@ -96,6 +96,7 @@
     <Compile Include="FinancialLog.cs" />
     <Compile Include="FinancialLogContext.cs" />
     <Compile Include="FLType.cs" />
+    <Compile Include="Months.cs" />
     <Compile Include="MonthTuple.cs" />
     <Compile Include="PeriodicTuple.cs" />
     <Compile Include="ReportWindow.xaml.cs">
