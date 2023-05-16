@@ -26,7 +26,7 @@ namespace FinancialAccountingTest
             pltReport.Plot.AddLine(10, 10, 20, 0);
             pltReport.Plot.AddLine(20, 0, 30, 10);
         }
-        public ReportWindow(List<MonthTuple>months)
+        public ReportWindow(List<MonthTuple> months)
         {
             InitializeComponent();
 
@@ -36,12 +36,15 @@ namespace FinancialAccountingTest
             List<double> positions = new List<double>();
             for (int i = 0; i < months.Count; i++)
                 positions.Add(i);
-            List<string> labels = new List<string>();
-            for (int i = 0; i < months.Count; i++)
-                labels.Add(months[i].Name);
-
-            pltReport.Plot.AddBar(values.ToArray(), positions.ToArray());
-            pltReport.Plot.XTicks(positions.ToArray(), labels.ToArray());
+            try
+            {
+                List<string> labels = new List<string>();
+                for (int i = 0; i < months.Count; i++)
+                    labels.Add(months[i].Name);
+                pltReport.Plot.AddBar(values.ToArray(), positions.ToArray());
+                pltReport.Plot.XTicks(positions.ToArray(), labels.ToArray());
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
             //pltReport.Plot.SetAxisLimits(yMin: 0);
         }
     }

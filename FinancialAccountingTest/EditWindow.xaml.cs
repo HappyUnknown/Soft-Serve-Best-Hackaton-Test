@@ -56,9 +56,9 @@ namespace FinancialAccountingTest
                 int id = int.Parse(lblId.Content.ToString());
                 var logInList = db.FinancialLogs.ToList().Where(x => x.Id == id).FirstOrDefault();
                 logInList.LogType = (FLType)(cmbType.SelectedIndex + 1);
-                logInList.Value =double.Parse(tbValue.Text);
+                logInList.Value = double.Parse(tbValue.Text);
                 logInList.Description = tbDescription.Text;
-                logInList.Date = dpDate.DisplayDate;
+                logInList.Date = dpDate.SelectedDate.Value;
                 db.Entry(logInList).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
 

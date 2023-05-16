@@ -51,57 +51,54 @@ namespace FinancialAccountingTest
 
         private void btnGetReport_Click(object sender, RoutedEventArgs e)
         {
-            var log = db.FinancialLogs.ToList();
-            var periodics = new List<FinancialLog>();
-            var months = new List<MonthTuple>();
-            for (int i = 0; i < log.Count; i++)
+            try
             {
-                string title = $"Month {log[i].Date.Month}, {log[i].Date.Year}";
-                int tindex = TitleIndex(title, ref months);
-                switch (log[i].LogType)
+                var log = db.FinancialLogs.ToList();
+                var periodics = new List<FinancialLog>();
+                var months = new List<MonthTuple>();
+                for (int i = 0; i < log.Count; i++)
                 {
-                    case FLType.Income:
-                        if (tindex == -1)
-                        {
-                            months.Add(new MonthTuple(title, 0));
-                            tindex = months.Count - 1;
-                        }
-                        months[tindex].Value += log[i].Value;
-                        break;
-                    case FLType.Spending:
-                        if (tindex == -1)
-                        {
-                            months.Add(new MonthTuple(title, 0));
-                            tindex = months.Count - 1;
-                        }
-                        months[tindex].Value -= log[i].Value;
-                        break;
-                    case FLType.Credit:
-                        periodics.Add(new FinancialLog() { Id = log[i].Id, Date = log[i].Date, Description = log[i].Description, LogType = log[i].LogType, Value = -log[i].Value });
-                        break;
-                    case FLType.Deposit:
-                        periodics.Add(log[i]);
-                        break;
-                    default:
-                        MessageBox.Show($"Unsigned type on ID-{log[i].Id}");
-                        break;
+                    string title = $"Month {log[i].Date.Month}, {log[i].Date.Year}";
+                    int tindex = TitleIndex(title, ref months);
+                    if (tindex == -1)
+                    {
+                        months.Add(new MonthTuple(log[i].Date, title, 0));
+                        tindex = months.Count - 1;
+                    }
+                    switch (log[i].LogType)
+                    {
+                        case FLType.Income:
+                            months[tindex].Value += log[i].Value;
+                            break;
+                        case FLType.Spending:
+                            months[tindex].Value -= log[i].Value;
+                            break;
+                        case FLType.Credit:
+                            periodics.Add(new FinancialLog() { Id = log[i].Id, Date = log[i].Date, Description = log[i].Description, LogType = log[i].LogType, Value = -log[i].Value });
+                            break;
+                        case FLType.Deposit:
+                            periodics.Add(log[i]);
+                            break;
+                        default:
+                            MessageBox.Show($"Unsigned type on ID-{log[i].Id}");
+                            break;
+                    }
+
                 }
 
+                for (int i = 0; i < months.Count; i++)
+                    for (int j = 0; j < periodics.Count; j++)
+                        if (periodics[j].Date.Month <= months[i].InitialDate.Month && periodics[j].Date.Year <= months[i].InitialDate.Year)
+                            months[i].Value += periodics[j].Value;
+
+                ReportWindow report = new ReportWindow(months);
+                //Close();
+                report.ShowDialog();
             }
-
-            double periodicIncome = 0;
-            for (int i = 0; i < periodics.Count; i++)
-                periodicIncome += periodics[i].Value;
-            MessageBox.Show($"Periodic income is: {periodicIncome}");
-
-            for (int i = 0; i < months.Count; i++)
+            catch (Exception ex)
             {
-                months[i].Value += periodicIncome;
+                MessageBox.Show(ex.Message);
             }
-
-            ReportWindow report = new ReportWindow(months);
-            //Close();
-            report.ShowDialog();
         }
 
         private void btnRemove_Click(object sender, RoutedEventArgs e)
@@ -113,7 +110,7 @@ namespace FinancialAccountingTest
                 db.FinancialLogs.Remove(listLog);
                 db.SaveChanges();
                 dgLogs.ItemsSource = db.FinancialLogs.ToList();
-                MessageBox.Show($"Success removing");
+                //MessageBox.Show($"Success removing");
             }
             catch (Exception ex)
             {

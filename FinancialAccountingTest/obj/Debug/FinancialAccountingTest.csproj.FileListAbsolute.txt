@@ -33,3 +33,4 @@ C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\D
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\ScottPlot.xml
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.ValueTuple.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.AssemblyReference.cache
