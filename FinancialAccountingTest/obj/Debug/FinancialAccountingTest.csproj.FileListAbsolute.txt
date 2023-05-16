@@ -24,3 +24,13 @@ C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\D
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.CopyComplete
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AddWindow.g.cs
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AddWindow.baml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\EditWindow.g.cs
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\EditWindow.baml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\ScottPlot.dll
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\ScottPlot.WPF.dll
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.Drawing.Common.dll
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.ValueTuple.dll
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\ScottPlot.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.ValueTuple.xml

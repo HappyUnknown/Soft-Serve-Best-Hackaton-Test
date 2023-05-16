@@ -52,7 +52,7 @@ namespace FinancialAccountingTest
                     if (MessageBox.Show("You may need some caption for your accounting. Negotiate?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
                         return;
              
-                var log = new FinancialLog() { Id = int.Parse(lblId.Content.ToString()), Date = DateTime.Now, Description = tbDescription.Text, LogType = type, Value = costValue };
+                var log = new FinancialLog() { Id = int.Parse(lblId.Content.ToString()), Date = dpDate.DisplayDate, Description = tbDescription.Text, LogType = type, Value = costValue };
                 db.FinancialLogs.Add(log);
                 db.SaveChanges();
 

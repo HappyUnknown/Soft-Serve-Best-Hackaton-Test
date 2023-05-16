@@ -7,6 +7,53 @@
         mc:Ignorable="d"
         Title="EditWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid Margin="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Viewbox Grid.Column="1">
+                <Label Content="Log Edition"/>
+            </Viewbox>
+            <Viewbox Grid.Row="1" HorizontalAlignment="Right">
+                <Label Content="Id"/>
+            </Viewbox>
+            <Viewbox HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1">
+                <Label Name="lblId"/>
+            </Viewbox>
+            <TextBox x:Name="tbValue" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" TextWrapping="Wrap" FontSize="20"/>
+            <Viewbox Grid.Row="2" HorizontalAlignment="Right">
+                <Label Content="Value"/>
+            </Viewbox>
+            <TextBox x:Name="tbDescription" Grid.Row="3" Grid.Column="1" VerticalContentAlignment="Center" TextWrapping="Wrap" FontSize="20"/>
+            <Viewbox Grid.Row="3" HorizontalAlignment="Right">
+                <Label Content="Description"/>
+            </Viewbox>
+            <!--<TextBox x:Name="tbDate" Grid.Row="4" Grid.Column="1"/>-->
+            <Viewbox Grid.Row="4" HorizontalAlignment="Right">
+                <Label Content="Date"/>
+            </Viewbox>
+            <Viewbox Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Left">
+                <DatePicker Name="dpDate" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+            </Viewbox>
+            <ComboBox x:Name="cmbType" Grid.Row="5" Grid.Column="1" VerticalContentAlignment="Center" FontSize="20"/>
+            <Viewbox Grid.Row="5" HorizontalAlignment="Right">
+                <Label Content="Type"/>
+            </Viewbox>
+            <Button x:Name="btnEditLog" Click="btnEditLog_Click" Grid.Row="6" Grid.Column="1" Margin="0 0 0 0">
+                <Viewbox>
+                    <Label Content="Edit"/>
+                </Viewbox>
+            </Button>
+        </Grid>
     </Grid>
 </Window>

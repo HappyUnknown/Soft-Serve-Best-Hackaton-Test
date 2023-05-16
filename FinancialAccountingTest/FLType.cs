@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinancialAccountingTest
 {
-    enum FLType
+    public enum FLType
     {
         Income = 1,
         Spending = 2,
