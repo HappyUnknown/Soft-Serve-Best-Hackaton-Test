@@ -1,7 +1,6 @@
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\FinancialAccountingTest.exe.config
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\FinancialAccountingTest.exe
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\FinancialAccountingTest.pdb
-C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.AssemblyReference.cache
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AdminWindow.g.cs
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\MainWindow.g.cs
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\ReportWindow.g.cs

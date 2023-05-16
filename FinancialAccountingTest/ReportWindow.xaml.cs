@@ -42,7 +42,7 @@ namespace FinancialAccountingTest
 
             pltReport.Plot.AddBar(values.ToArray(), positions.ToArray());
             pltReport.Plot.XTicks(positions.ToArray(), labels.ToArray());
-            pltReport.Plot.SetAxisLimits(yMin: 0);
+            //pltReport.Plot.SetAxisLimits(yMin: 0);
         }
     }
 }
