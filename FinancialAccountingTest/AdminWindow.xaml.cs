@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -14,6 +17,13 @@ using System.Windows.Shapes;
 
 namespace FinancialAccountingTest
 {
+    class Currency
+    {
+        public string CurrencyName { get; set; }
+        public string BaseName { get; set; }
+        public double Buy { get; set; }
+        public double Sale { get; set; }
+    }
     /// <summary>
     /// Interaction logic for AdminWindow.xaml
     /// </summary>
@@ -31,7 +41,19 @@ namespace FinancialAccountingTest
             {
                 MessageBox.Show(ex.Message);
             }
-
+            var json = new WebClient().DownloadString("https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=5");
+            try
+            {
+                var obj = (JArray)JsonConvert.DeserializeObject(json);
+                double eurBuy = obj[0]["buy"].Value<double>();
+                double usdBuy = obj[1]["buy"].Value<double>();
+                lblDolar.Content = $"EUR - {String.Format("{0:0.00}", eurBuy)}";
+                lblEuro.Content = $"USD - {String.Format("{0:0.00}", usdBuy)}";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnOpenAdd_Click(object sender, RoutedEventArgs e)
@@ -112,7 +134,7 @@ namespace FinancialAccountingTest
                 dgLogs.ItemsSource = db.FinancialLogs.ToList();
                 //MessageBox.Show($"Success removing");
             }
-            catch(NullReferenceException) 
+            catch (NullReferenceException)
             {
                 MessageBox.Show("You cannot remove an element ommiting its selection.");
             }

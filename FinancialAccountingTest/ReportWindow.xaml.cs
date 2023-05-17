@@ -43,6 +43,13 @@ namespace FinancialAccountingTest
                     labels.Add(months[i].Name);
                 var bar = pltReport.Plot.AddBar(values.ToArray(), positions.ToArray());
                 bar.ShowValuesAboveBars = true;
+
+                System.Windows.Media.Color mediacolor = (FindResource("ForegroundColor") as SolidColorBrush).Color; // your color
+                var drawingcolor = System.Drawing.Color.FromArgb(
+                    mediacolor.A, mediacolor.R, mediacolor.G, mediacolor.B);
+
+                bar.FillColorNegative = drawingcolor;
+                bar.FillColor = drawingcolor;
                 pltReport.Plot.XTicks(positions.ToArray(), labels.ToArray());
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }

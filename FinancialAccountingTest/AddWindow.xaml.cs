@@ -36,6 +36,13 @@ namespace FinancialAccountingTest
                 nextId = finLogs[finLogs.Count - 1].Id + 1;
             return nextId;
         }
+        void GetBack()
+        {
+            AdminWindow window = new AdminWindow();
+            Close();
+            window.ShowDialog();
+        }
+
         private void btnAddLog_Click(object sender, RoutedEventArgs e)
         {
             FLType type = FLType.Credit;
@@ -56,14 +63,17 @@ namespace FinancialAccountingTest
                 db.FinancialLogs.Add(log);
                 db.SaveChanges();
 
-                AdminWindow window = new AdminWindow();
-                Close();
-                window.ShowDialog();
+                GetBack();
             }
             else
             {
                 MessageBox.Show("It does not seem you are intending to add non-numeric prive log.");
             }
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            GetBack();
         }
     }
 }

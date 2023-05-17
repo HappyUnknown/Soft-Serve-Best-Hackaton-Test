@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FinancialAccountingTest"
         mc:Ignorable="d"
         Title="ReportWindow" Height="450" Width="800">
-    <Grid>
-        <WpfPlot Name="pltReport"/>
-    </Grid>
+    <DockPanel>
+        <WpfPlot Name="pltReport" Margin="10"/>
+    </DockPanel>
 </Window>

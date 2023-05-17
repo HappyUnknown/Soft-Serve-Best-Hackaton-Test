@@ -6,87 +6,63 @@
         xmlns:local="clr-namespace:FinancialAccountingTest"
         mc:Ignorable="d"
         Title="EditWindow" Height="450" Width="800">
-    <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="#373737" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="FontSize" Value="15" />
-            <Setter Property="SnapsToDevicePixels" Value="True" />
-            <Setter Property="Margin" Value="40"/>
-
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border CornerRadius="10" Background="{TemplateBinding Background}">
-                            <Grid>
-                                <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
-                            </Grid>
-                        </Border>
-
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#E59400" />
-                                <Setter Property="Foreground" Value="White" />
-                            </Trigger>
-
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" Value="OrangeRed" />
-                                <Setter Property="Foreground" Value="White" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
-    <Grid>
-        <Grid Margin="50">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="3*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Viewbox Grid.Column="1">
-                <Label Content="Log Edition"/>
-            </Viewbox>
-            <Viewbox Grid.Row="1" HorizontalAlignment="Right">
-                <Label Content="Id"/>
-            </Viewbox>
-            <Viewbox HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1">
-                <Label Name="lblId"/>
-            </Viewbox>
-            <TextBox x:Name="tbValue" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" TextWrapping="Wrap" FontSize="20"/>
-            <Viewbox Grid.Row="2" HorizontalAlignment="Right">
-                <Label Content="Value"/>
-            </Viewbox>
-            <TextBox x:Name="tbDescription" Grid.Row="3" Grid.Column="1" VerticalContentAlignment="Center" TextWrapping="Wrap" FontSize="20"/>
-            <Viewbox Grid.Row="3" HorizontalAlignment="Right">
-                <Label Content="Description"/>
-            </Viewbox>
-            <!--<TextBox x:Name="tbDate" Grid.Row="4" Grid.Column="1"/>-->
-            <Viewbox Grid.Row="4" HorizontalAlignment="Right">
-                <Label Content="Date"/>
-            </Viewbox>
-            <Viewbox Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Left">
-                <DatePicker Name="dpDate" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-            </Viewbox>
-            <ComboBox x:Name="cmbType" Grid.Row="5" Grid.Column="1" VerticalContentAlignment="Center" FontSize="20"/>
-            <Viewbox Grid.Row="5" HorizontalAlignment="Right">
-                <Label Content="Type"/>
-            </Viewbox>
-            <Button x:Name="btnEditLog" Click="btnEditLog_Click" Grid.Row="6" Grid.Column="1" Margin="0 0 0 0">
-                <Viewbox>
-                    <Label Content="Edit"/>
+    <DockPanel>
+        <Grid>
+            <Grid Margin="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Viewbox Grid.Column="1" Margin="3">
+                    <Label Content="Log Edition"/>
                 </Viewbox>
-            </Button>
+                <Viewbox Grid.Row="1" HorizontalAlignment="Right" Margin="3">
+                    <Label Content="Id"/>
+                </Viewbox>
+                <Viewbox HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Margin="3">
+                    <Label Name="lblId"/>
+                </Viewbox>
+                <TextBox x:Name="tbValue" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" TextWrapping="Wrap" FontSize="20" Margin="3"/>
+                <Viewbox Grid.Row="2" HorizontalAlignment="Right">
+                    <Label Content="Value"/>
+                </Viewbox>
+                <TextBox x:Name="tbDescription" Grid.Row="3" Grid.Column="1" VerticalContentAlignment="Center" TextWrapping="Wrap" FontSize="20" Margin="3"/>
+                <Viewbox Grid.Row="3" HorizontalAlignment="Right">
+                    <Label Content="Description"/>
+                </Viewbox>
+                <!--<TextBox x:Name="tbDate" Grid.Row="4" Grid.Column="1"/>-->
+                <Viewbox Grid.Row="4" HorizontalAlignment="Right" Margin="3">
+                    <Label Content="Date"/>
+                </Viewbox>
+                <Viewbox Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="3">
+                    <DatePicker Name="dpDate" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+                </Viewbox>
+                <ComboBox x:Name="cmbType" Grid.Row="5" Grid.Column="1" VerticalContentAlignment="Center" FontSize="20" Margin="3"/>
+                <Viewbox Grid.Row="5" HorizontalAlignment="Right">
+                    <Label Content="Type"/>
+                </Viewbox>
+                <Button x:Name="btnEditLog" Click="btnEditLog_Click" Grid.Row="6" Grid.Column="1" Margin="3">
+                    <Viewbox>
+                        <Label Content="Edit"/>
+                    </Viewbox>
+                </Button>
+                <Button x:Name="btnCancel" Click="btnCancel_Click" Grid.Row="7" Grid.Column="1" Margin="3">
+                    <Viewbox>
+                        <Label Content="Cancel"/>
+                    </Viewbox>
+                </Button>
+            </Grid>
         </Grid>
-    </Grid>
+    </DockPanel>
+
 </Window>
