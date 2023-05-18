@@ -128,11 +128,14 @@ namespace FinancialAccountingTest
             try
             {
                 var log = dgLogs.SelectedItem as FinancialLog;
-                var listLog = db.FinancialLogs.ToList().Where(x => x.Id == log.Id).FirstOrDefault();
-                db.FinancialLogs.Remove(listLog);
-                db.SaveChanges();
-                dgLogs.ItemsSource = db.FinancialLogs.ToList();
-                //MessageBox.Show($"Success removing");
+                if (MessageBox.Show($"You are going to remove item on ID-{log.Id}. Proceed?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                {
+                    var listLog = db.FinancialLogs.ToList().Where(x => x.Id == log.Id).FirstOrDefault();
+                    db.FinancialLogs.Remove(listLog);
+                    db.SaveChanges();
+                    dgLogs.ItemsSource = db.FinancialLogs.ToList();
+                    //MessageBox.Show($"Success removing");
+                }
             }
             catch (NullReferenceException)
             {
