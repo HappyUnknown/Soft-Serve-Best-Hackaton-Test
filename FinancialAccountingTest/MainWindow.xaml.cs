@@ -27,9 +27,16 @@ namespace FinancialAccountingTest
 
         private void btnEnter_Click(object sender, RoutedEventArgs e)
         {
-            AdminWindow adminWindow = new AdminWindow();
-            Close();
-            adminWindow.ShowDialog();
+            try
+            {
+                AdminWindow adminWindow = new AdminWindow();
+                Close();
+                adminWindow.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
