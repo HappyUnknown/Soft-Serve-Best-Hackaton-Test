@@ -59,7 +59,7 @@
                     <Label Name="lblEuro" Content="---"/>
                 </Viewbox>
             </Grid>
-            <DataGrid Name="dgLogs" Grid.Row="1"/>
+            <DataGrid Name="dgLogs" Grid.Row="1" IsReadOnly="True"/>
             <Button Grid.Column="0" Grid.Row="2" Name="btnGetReport" Click="btnGetReport_Click" Margin="3">
                 <Viewbox>
                     <Label Content="Report"/>
