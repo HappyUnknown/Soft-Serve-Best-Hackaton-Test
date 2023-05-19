@@ -30,3 +30,4 @@ C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\D
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.Fody.CopyLocal.cache
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.AssemblyReference.cache

@@ -68,7 +68,7 @@
             <Setter Property="Foreground" Value="{StaticResource ForegroundColor}"/>
             <Setter Property="FontFamily" Value="Lucida Console"/>
         </Style>
-        <Style TargetType="TextBox">
+        <!--<Style TargetType="TextBox">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TextBox}">
@@ -76,7 +76,7 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-        </Style>
+        </Style>-->
         <Style TargetType="Button">
             <Setter Property="Background" Value="{StaticResource ButtonBackColor}"/>
             <Setter Property="Foreground" Value="{StaticResource ForegroundColor}"/>
