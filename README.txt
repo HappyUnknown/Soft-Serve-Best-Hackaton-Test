@@ -10,6 +10,7 @@ App is being distributed as an exe-type file, that is ready to execution, withou
 
 ## Usage
 
+[Warning]: You must have Microsoft SQL Server installed, in order to use the program properly
 When the app is being started, you face greeting screen, when you have only one button-type control.
 You need to press the "Hello" button, so that database connection will be established. This screen is
 created to catch database exceptions on button click, and allow user understand, what is going on with
