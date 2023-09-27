@@ -1,0 +1,65 @@
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\FinancialAccountingTest.exe.config
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\FinancialAccountingTest.exe
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\FinancialAccountingTest.pdb
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AdminWindow.g.cs
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\MainWindow.g.cs
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\ReportWindow.g.cs
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\App.g.cs
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest_MarkupCompile.cache
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest_MarkupCompile.lref
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AdminWindow.baml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\MainWindow.baml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\ReportWindow.baml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.g.resources
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.Properties.Resources.resources
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.exe
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.pdb
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\EntityFramework.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.CopyComplete
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AddWindow.g.cs
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AddWindow.baml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\EditWindow.g.cs
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\EditWindow.baml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\ScottPlot.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.ValueTuple.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\App.baml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Acer\source\repos\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.Fody.CopyLocal.cache
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\FinancialAccountingTest.exe.config
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\FinancialAccountingTest.exe
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\FinancialAccountingTest.pdb
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\EntityFramework.xml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\EntityFramework.SqlServer.xml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\Newtonsoft.Json.xml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\ScottPlot.xml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.Numerics.Vectors.xml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\bin\Debug\System.ValueTuple.xml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.AssemblyReference.cache
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AddWindow.g.cs
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AdminWindow.g.cs
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\EditWindow.g.cs
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\MainWindow.g.cs
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\ReportWindow.g.cs
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\App.g.cs
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest_MarkupCompile.cache
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest_MarkupCompile.lref
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\App.baml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AddWindow.baml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\AdminWindow.baml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\EditWindow.baml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\MainWindow.baml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\ReportWindow.baml
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.g.resources
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.Properties.Resources.resources
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.GenerateResource.cache
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.CoreCompileInputs.cache
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.Fody.CopyLocal.cache
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.csproj.CopyComplete
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.exe
+E:\FILES\GENERAL-PURPOSE\PROJECTS\PROGRAMMING\Source - Visual Studio\Author Apps\FinancialAccountingTest\FinancialAccountingTest\obj\Debug\FinancialAccountingTest.pdb
